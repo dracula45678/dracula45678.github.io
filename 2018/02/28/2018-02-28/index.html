@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="google sheets,google app script,資料庫," />
 
 
 
@@ -81,16 +81,27 @@
 
 
 
-<meta name="description" content="學習筆記或記事">
-<meta property="og:type" content="website">
-<meta property="og:title" content="YuYan Blog">
-<meta property="og:url" content="https://dracula45678.github.io/archives/2018/index.html">
+<meta name="description" content="google app script 應用於 Google 試算表 透過試算表做簡易資料庫">
+<meta name="keywords" content="google sheets,google app script,資料庫">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Google App Script 應用">
+<meta property="og:url" content="https://dracula45678.github.io/2018/02/28/2018-02-28/index.html">
 <meta property="og:site_name" content="YuYan Blog">
-<meta property="og:description" content="學習筆記或記事">
+<meta property="og:description" content="google app script 應用於 Google 試算表 透過試算表做簡易資料庫">
 <meta property="og:locale" content="zh-tw">
+<meta property="og:image" content="https://lh3.googleusercontent.com/lzbOqAyjQF-yqvNNHsrnMliX7DZKQ1N7ZBHjejbxx_CfpYZVVDXOQ_346hUWCACLmsc_tmXx3UssRO-Pd1meP5PSIFHB3OljnFXfD3J-DtnLitORkrpTHJXuj8nhGCR3HxRlmGPEhXr1dhgxk8mXCOCAj8lwCQ-fuj6jpvb3KILrAukTF92Yj0-_Bsj1yKKesmhQW6QnDL3hexdo6-34x3fTluKZENWt2xEk1OktatfyLQ9WDreYjQtEHMXuOhR0IgnvH31SG7YnQ_6YrxnsuqpykORU9dNgiWgyRtUDy0x-XMx874DcHsseUhfoy-0jI1smypBAJdTLPehrpzHO7y5yXaolrrh0Ma_JTVPQwODDC_hV-2TVl6AyXfyerbX-COpKlrVdqf5YeS-f1NKq85Rt9A0ACtIwPwV9Iymo3i89ufXGM5GdGyvcFu0SumhNlftyZ0sEhZAMilNVYB8x5kV1pjmFmwvq4aXZynPS-A0EzX1sWjhCy_kUklV6zLLwbOZqhqsHwqtYBEyvPAcAMwiyzATR_Hnd4p2lAmf0oLkkpBVcOdaeKQ3q14PYjoHY30vwsL3kWMaqOAqD9aTCblYSbDiGtQ2WWjtVm-U=w888-h404-no">
+<meta property="og:image" content="https://lh3.googleusercontent.com/5r-tzG0aY4nj7WTP38KAexJWzGmR7FUjwNpciZMLAITYXh-kDm-N0RcO2ZtIA76eslBWp5ZUPyWb_41g4NKGy6egQmh3Ana4Dm_2LqpVx_IGoOb2RkI8PMRSMERyd9vvgN_bCQ9HUb62Y8B5-JCmadM3Tn03wcRaUqgwqunX0H4F6DBlBWl8v31yEn80gjQ8EiGxAWpR78p4S40QPjNi-EFyhcGyeKjRU6OuFIPSR5kevryt_oyuULrvW96Xjw0Xi3lLeN2sOdyZL1Zq5lDtjGH1Ks_Tm7MvWP0TJZis-nhir2raLVjcP0Gk_YgizGbEStF3pYssYJblMyCOR5Yf7dcbfZCpysXRmaErQdOP2xZPwLb4Gw4XTcVEC51kY5tVMBizcsIjbvJ1kOzljlxXBbevGBvbeebRikAoqNh9mqQw13kvzuPjEbzxnjLXMwLiQoWkOWxqNVPz3Nxze18WoInHMzHbg56svFvBZo2Qe-ZhzsTk0LxM9FZYHp_fm_KfI3x3_tmc2eFFhqZ5XoWcqVMOaCynvRZ0rddDPoxAU5mtdOO_xlmPVQvR-k85wbW8qLfPUuXZscQJnneRv2goZSTLdLCIhRcPr9KgnK0=w597-h437-no">
+<meta property="og:image" content="https://lh3.googleusercontent.com/vmwNChBDJgrz18NwDqzETpcHlkALDuhbU1Hc2qwm48A-S23jomeMgX8EE62ThGA-7XI3BJRcZKdKA6ghKHa-LR1BeLYI2V5fQMFLc6IIsgt4A-bpYnlhJBOjOouHqvITgsMz01UHpodP1ms-UJP-B2yyp6vWEanrmu7FfVyFLFCakxkcbhecVvBal9PKN-7uRhlnj8YnflKz2FEX66VT5DYUEfj5l_v4A9fcUrmx6pHo__GWzMxAZOv8klcgmgofh2kT-m8LMtZtBJchepx1DbeLLNY7vLfi3CNYOoUqMuddCVQjoDqUTlJbTa8Gl3Rvo2eV5i_wOWKKN7xJm6pwpgXHINuN1UwxV1j1UagFYL3Ve5RHuW-LURKvX4lLXVTSaSSLGcooA1ZBG8MV6IuBWhjV6KAa9ccjRdEMNeGpficRV74I1oxeLmyCFDUTMyGsa-uj6jfhTByFSxh1d3wHh6k8Vx9Aqefn7rXeyz21UIVDwNkITICu-rSrAGeekeKabn3iO5wiM4hC0KBzlLADUERNbXPUsc2Ah2eX5zmGMvmpSf90W3kzfhBz3Kw3XC61rNi-ENJVrPz6Akm6J_n1EoGJUhP202BWrYPLlMc=w667-h689-no">
+<meta property="og:image" content="https://lh3.googleusercontent.com/EpYwTQCVHXy2os4AdPDRkCRnY1Y9PJCn76UGhPLA3BFCHvNuDMLIEDwYInfd8oO2vYtpEm6HN5JOQB0OljHaBClcklHv00Ze_VnTlom4W8cEUhdiNNd-lEGtWAmLcqfUobKOk8o3s6eAxWYqgp6Mbb5Mme1vEn8PRcCPs85vCTw2ctXYBHzQZJJ50RWdmBYhO7OnPlyYjcnGXrjG0hBtfVPt-NjBaZWrxSnYu7Nm3fXEqEu1OgJ79EO-X-g4yr-61PCn3ddOaB5GopbRFs3Bcda9Gs2R16jJwUUBpG77wwKIqBzTg4FXQ5UmtfpZqGesvbXjeaowzGnY_OxktGPdCsDE0rz-1fhK2_nJhEeSxp8kVGqhcZiI2JLuJLRTWwekvE2ojIzxiuCLAHkLMBJfHfaQJ88yzTc-lADxI2nU7ztHWnKefnfO_EmpSlzzRpR75QNIqTajdxf_aMDdkNHBznfXYO2cWhvGe50St0X2Zp91MRnCWPF26KPM6BuSD4fqsQMNpuqQIGIoqzJmJ3xfqY5RzxQHBIeKdGVZU9ntSV3DX8oK01w1Qz9ltLyPy5_LMVDOFkDuwPYPDS9MbYFO7dBY8-_sk-hljWxOxSM=w737-h247-no">
+<meta property="og:image" content="https://lh3.googleusercontent.com/pE07qMG2YeNKyes3SqMPL4xp0UG5uEJFf_h9yGJtcYx_MdbYi3QRikI8-AcWqqTU0Ium4ROTluDafX57ZtscTjHDWmtQtBDxf1uhyCg---B6jOs18eDzqTM-SZDqhM3WOK-lxYRFuMkgU9uGM4f77rBEjblgYg6yQOOUVCDXxSTD0-Lho1CE8OPXX7L50RSyefsGwcnvbh7pLtGjMpjk809E86RD1oRTtcp4_YNv3r3LoPgkDOE3z-hBq00CuOck1Go38xFIvZX-h4AzXquzpoSUV1XCSjO0wZcrZl7kjOhK7o6RagOTmo2tlAvx4gZTgB9MK1_8Wwsh9tfMNwAOCRx0l2lcKfoBDX7Gioeb72McWbs8LWVccn-UteeyYccDI2ukw7kp-otxHz2nvM7DrvRlTzCuMhqr1NIkgvhhKxkz5Ke6lUnQ7Z_hxlhEdAS7MMt3TqMfxbZdq3bKm7Z32hN4lL7YvAY_FVAbMwvZcJwIMEffWTwLiOhwNlBqgse34zGTMAahYubVHwKxWUMXzZQQVOgt4wv8Pwedh7RkovenYjlQh3mLzg7JQls2mym9PhWY7eiYQFLUAqvN7x6IgYpFNNZlzG7EY-Z1fcg=w711-h650-no">
+<meta property="og:image" content="https://lh3.googleusercontent.com/5qYsu_0PdB6hwKjHBvgrG0hgJAgmo6_Vd0qwdWqF6imPwjizvme8Xn-MJhmVy6wC3r4Q-o2H8htc_mEnHYkELc2BoyFfwOo9mVArYdMg00sQBoNEbGKbzS46-olVpgSaVmFknr7Vv7Jodh79DquN9hSrwXucku7pQ_uLPS4G2V2xFpxIsi4yoeI8HMyPx1X75t0xrLnhyb1yl6pDHQYQgxU34lm8T7tpgBgc1OIa7LQm7fqArTJg15fNp3e9v7Aequc7yJbHJt8NGOINCvmaS8GcYNCPEEpzFz2vXEilhkcBp4TwsOkw60Oe7rZGRMSgYG4_6J7Tvc0cnN28SoIpdI9LZy3QRHXNhqy4srtOH7_gDUvNLosSyvLmZlzY8TX-s_uzL7bWRuKeaMemZWQ1-00hekqaS1pAtjUMTyqdAjE5HGNb-85VJbECpzsYRL3GhrPefayJn-Jf0TriU1CJl2Au0Gy19rE8fmr2REZsEKJECzKjdZNBRIdo5QzAz67t36O-fzVBaUAd0UeYc4OOal1EqYphGoM-EqgM96e5k1GhC-W53aUtRZJVLYJcl0oGQeJ8-UrXYOt8vO-tQ7CMw-dEYZA82GVQIQ4z6bU=w416-h310-no">
+<meta property="og:image" content="https://lh3.googleusercontent.com/VdLM6dWHe9WM25ZU55VpOCzPuIAlAqDWxmkaxpW6aXNRxBSDDRoz4xqa7GU0fP_iDQyZLMnvQ3zKg4V8XVillTosAZYeb_kw9tc_HAiHGgnDO4a9e6GD1Fa7bojiHopuSYAreH2yCvHAgw7KV5n4XKprLLDAOGZ2q1nc1thqhI0ifSYU2LpyUMRs54xv7OLuTwCnQFptBSQPdaetdCLiyHDUCWVfKewrz-ZzXCp2tsj3L2OSmoimmLnOyDJcShO57st8qKr3_LXMXHgukTpJ0dHgtv3DHwHf9mV4LYQOdrRgYJ0jQX-EQUyCraGBhUm2OaxP7kzXR_Xi7oNCo19jmGYRe1h4L1jEqAMw8VvGZ0dQA73PMnU1-M7mCE5YTJHiJzQ8bapzt1sNdRQ0_bMVgI81QPycmzxclFXffOlzSq0cNQ_1B85s-FJMQAh10i8azF3WSnFKAelcPCLm2IXz-1rCN-UZjtXhw39CuCu_IolrSyR866y5MWXA_I6zCjIX6wkmoGmBQljkAOb-hYkd9oPWwHmKynguJGQzn88Jay4tMZkULgxzkvPbdszng69nGQHLgo_r6ykN2ukQKGK-_bfs0ekb7BfIRg1Usns=w627-h621-no">
+<meta property="og:image" content="https://lh3.googleusercontent.com/pAU7f5pZM-GYE7UJWFhP4byWlKdKXjnGSuSR29Gk09Gu6LNX49hjR55QgSb9FGeAlsIlSm8znHCra3cfn7qt5G_gUuHNOP7cjiyB2N3UDxXiyetJKZ00GxN0D2MkQ6wJEyhn77jhXbDMhcGUiXiM9x8FuKcKUdk1qGoO53Qu1IIt1MWD4xBJzGxdrL5RJx94xYOAtwkp3KSjCiVGdpl7kHgc9VhlHYUem5aEwtA1Olnon9s7tmEe4YxXIPMnR9iMuQsQtnjEG-Fl-pj6SzzyOTAgI7wMd8SufeiCuQY4_rFLNR942chOrpJQtVQDfXz3FO0T2Zd1KVlR8K6vtzVmH5P1G5kgdGm-Dovy8Wrwh8NM6js2IYRh61XHlXsxG2kRvFvTB8ErL0yYPThGm6vYe3kQIsiaAbK76kZpEH4KoTvHI5sqj8tKhjU2J_Eh0FwHqoDom6z-XUf9DXBj71irJNjVqc0h3ARsPgdpQgwYm0QCbwfF570efNES8w-CLyMqu3IhO9OKDtRk-E_bYX_YU2QXyrrnnRYvNHJ_m5m7wcvCckyh0MlQ9EpaL_7VvqeE9iPAav_nGROjkcjUZAOqrRNcoLK_zJq34dCD5Q8=w475-h522-no">
+<meta property="og:updated_time" content="2018-03-03T08:29:29.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="YuYan Blog">
-<meta name="twitter:description" content="學習筆記或記事">
+<meta name="twitter:title" content="Google App Script 應用">
+<meta name="twitter:description" content="google app script 應用於 Google 試算表 透過試算表做簡易資料庫">
+<meta name="twitter:image" content="https://lh3.googleusercontent.com/lzbOqAyjQF-yqvNNHsrnMliX7DZKQ1N7ZBHjejbxx_CfpYZVVDXOQ_346hUWCACLmsc_tmXx3UssRO-Pd1meP5PSIFHB3OljnFXfD3J-DtnLitORkrpTHJXuj8nhGCR3HxRlmGPEhXr1dhgxk8mXCOCAj8lwCQ-fuj6jpvb3KILrAukTF92Yj0-_Bsj1yKKesmhQW6QnDL3hexdo6-34x3fTluKZENWt2xEk1OktatfyLQ9WDreYjQtEHMXuOhR0IgnvH31SG7YnQ_6YrxnsuqpykORU9dNgiWgyRtUDy0x-XMx874DcHsseUhfoy-0jI1smypBAJdTLPehrpzHO7y5yXaolrrh0Ma_JTVPQwODDC_hV-2TVl6AyXfyerbX-COpKlrVdqf5YeS-f1NKq85Rt9A0ACtIwPwV9Iymo3i89ufXGM5GdGyvcFu0SumhNlftyZ0sEhZAMilNVYB8x5kV1pjmFmwvq4aXZynPS-A0EzX1sWjhCy_kUklV6zLLwbOZqhqsHwqtYBEyvPAcAMwiyzATR_Hnd4p2lAmf0oLkkpBVcOdaeKQ3q14PYjoHY30vwsL3kWMaqOAqD9aTCblYSbDiGtQ2WWjtVm-U=w888-h404-no">
 
 
 
@@ -120,13 +131,13 @@
 
 
 
-  <link rel="canonical" href="https://dracula45678.github.io/archives/2018/"/>
+  <link rel="canonical" href="https://dracula45678.github.io/2018/02/28/2018-02-28/"/>
 
 
 
 
 
-  <title>歸檔 | YuYan Blog</title>
+  <title>Google App Script 應用 | YuYan Blog</title>
   
 
 
@@ -145,7 +156,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -283,74 +294,173 @@
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+    
+
+  
+
   
   
   
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
-
-      <span class="archive-page-counter">
-        
-        
-        
-          
-        
-        嗯..! 目前共計 1 篇文章。 繼續努力。
-      </span>
-
-      
-
-        
-        
-        
-
-        
-          
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2018">2018</h1>
-          </div>
-        
-        
-
-        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://dracula45678.github.io/2018/02/28/2018-02-28/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="YuYan Huang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="YuYan Blog">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2018/02/28/2018-02-28/" itemprop="url">
-              
-                <span itemprop="name">Google App Script 應用</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">Google App Script 應用</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-02-28T15:15:10+08:00"
-              content="2018-02-28" >
-          02-28
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">發表於</span>
+              
+              <time title="創建於" itemprop="dateCreated datePublished" datetime="2018-02-28T15:15:10+08:00">
+                2018-02-28
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分類於</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/web/" itemprop="url" rel="index">
+                    <span itemprop="name">web</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><a href="https://developers.google.com/apps-script/" target="_blank" rel="noopener">google app script</a> 應用於 Google 試算表 透過試算表做簡易資料庫<br><a id="more"></a></p>
+<h3 id="參考官方文件"><a href="#參考官方文件" class="headerlink" title="參考官方文件"></a>參考官方文件</h3><p><a href="https://developers.google.com/apps-script/reference/spreadsheet/" target="_blank" rel="noopener">Reference</a></p>
+<h3 id="第一步建立google試算表-並開啟與他人共用"><a href="#第一步建立google試算表-並開啟與他人共用" class="headerlink" title="第一步建立google試算表 並開啟與他人共用"></a>第一步建立google試算表 並開啟與他人共用</h3><p><img src="https://lh3.googleusercontent.com/lzbOqAyjQF-yqvNNHsrnMliX7DZKQ1N7ZBHjejbxx_CfpYZVVDXOQ_346hUWCACLmsc_tmXx3UssRO-Pd1meP5PSIFHB3OljnFXfD3J-DtnLitORkrpTHJXuj8nhGCR3HxRlmGPEhXr1dhgxk8mXCOCAj8lwCQ-fuj6jpvb3KILrAukTF92Yj0-_Bsj1yKKesmhQW6QnDL3hexdo6-34x3fTluKZENWt2xEk1OktatfyLQ9WDreYjQtEHMXuOhR0IgnvH31SG7YnQ_6YrxnsuqpykORU9dNgiWgyRtUDy0x-XMx874DcHsseUhfoy-0jI1smypBAJdTLPehrpzHO7y5yXaolrrh0Ma_JTVPQwODDC_hV-2TVl6AyXfyerbX-COpKlrVdqf5YeS-f1NKq85Rt9A0ACtIwPwV9Iymo3i89ufXGM5GdGyvcFu0SumhNlftyZ0sEhZAMilNVYB8x5kV1pjmFmwvq4aXZynPS-A0EzX1sWjhCy_kUklV6zLLwbOZqhqsHwqtYBEyvPAcAMwiyzATR_Hnd4p2lAmf0oLkkpBVcOdaeKQ3q14PYjoHY30vwsL3kWMaqOAqD9aTCblYSbDiGtQ2WWjtVm-U=w888-h404-no" alt="image"></p>
+<p><img src="https://lh3.googleusercontent.com/5r-tzG0aY4nj7WTP38KAexJWzGmR7FUjwNpciZMLAITYXh-kDm-N0RcO2ZtIA76eslBWp5ZUPyWb_41g4NKGy6egQmh3Ana4Dm_2LqpVx_IGoOb2RkI8PMRSMERyd9vvgN_bCQ9HUb62Y8B5-JCmadM3Tn03wcRaUqgwqunX0H4F6DBlBWl8v31yEn80gjQ8EiGxAWpR78p4S40QPjNi-EFyhcGyeKjRU6OuFIPSR5kevryt_oyuULrvW96Xjw0Xi3lLeN2sOdyZL1Zq5lDtjGH1Ks_Tm7MvWP0TJZis-nhir2raLVjcP0Gk_YgizGbEStF3pYssYJblMyCOR5Yf7dcbfZCpysXRmaErQdOP2xZPwLb4Gw4XTcVEC51kY5tVMBizcsIjbvJ1kOzljlxXBbevGBvbeebRikAoqNh9mqQw13kvzuPjEbzxnjLXMwLiQoWkOWxqNVPz3Nxze18WoInHMzHbg56svFvBZo2Qe-ZhzsTk0LxM9FZYHp_fm_KfI3x3_tmc2eFFhqZ5XoWcqVMOaCynvRZ0rddDPoxAU5mtdOO_xlmPVQvR-k85wbW8qLfPUuXZscQJnneRv2goZSTLdLCIhRcPr9KgnK0=w597-h437-no" alt="image"></p>
+<h3 id="第二步安裝-google-app-script"><a href="#第二步安裝-google-app-script" class="headerlink" title="第二步安裝 google app script"></a>第二步安裝 google app script</h3><p><img src="https://lh3.googleusercontent.com/vmwNChBDJgrz18NwDqzETpcHlkALDuhbU1Hc2qwm48A-S23jomeMgX8EE62ThGA-7XI3BJRcZKdKA6ghKHa-LR1BeLYI2V5fQMFLc6IIsgt4A-bpYnlhJBOjOouHqvITgsMz01UHpodP1ms-UJP-B2yyp6vWEanrmu7FfVyFLFCakxkcbhecVvBal9PKN-7uRhlnj8YnflKz2FEX66VT5DYUEfj5l_v4A9fcUrmx6pHo__GWzMxAZOv8klcgmgofh2kT-m8LMtZtBJchepx1DbeLLNY7vLfi3CNYOoUqMuddCVQjoDqUTlJbTa8Gl3Rvo2eV5i_wOWKKN7xJm6pwpgXHINuN1UwxV1j1UagFYL3Ve5RHuW-LURKvX4lLXVTSaSSLGcooA1ZBG8MV6IuBWhjV6KAa9ccjRdEMNeGpficRV74I1oxeLmyCFDUTMyGsa-uj6jfhTByFSxh1d3wHh6k8Vx9Aqefn7rXeyz21UIVDwNkITICu-rSrAGeekeKabn3iO5wiM4hC0KBzlLADUERNbXPUsc2Ah2eX5zmGMvmpSf90W3kzfhBz3Kw3XC61rNi-ENJVrPz6Akm6J_n1EoGJUhP202BWrYPLlMc=w667-h689-no" alt="image"></p>
+<p><img src="https://lh3.googleusercontent.com/EpYwTQCVHXy2os4AdPDRkCRnY1Y9PJCn76UGhPLA3BFCHvNuDMLIEDwYInfd8oO2vYtpEm6HN5JOQB0OljHaBClcklHv00Ze_VnTlom4W8cEUhdiNNd-lEGtWAmLcqfUobKOk8o3s6eAxWYqgp6Mbb5Mme1vEn8PRcCPs85vCTw2ctXYBHzQZJJ50RWdmBYhO7OnPlyYjcnGXrjG0hBtfVPt-NjBaZWrxSnYu7Nm3fXEqEu1OgJ79EO-X-g4yr-61PCn3ddOaB5GopbRFs3Bcda9Gs2R16jJwUUBpG77wwKIqBzTg4FXQ5UmtfpZqGesvbXjeaowzGnY_OxktGPdCsDE0rz-1fhK2_nJhEeSxp8kVGqhcZiI2JLuJLRTWwekvE2ojIzxiuCLAHkLMBJfHfaQJ88yzTc-lADxI2nU7ztHWnKefnfO_EmpSlzzRpR75QNIqTajdxf_aMDdkNHBznfXYO2cWhvGe50St0X2Zp91MRnCWPF26KPM6BuSD4fqsQMNpuqQIGIoqzJmJ3xfqY5RzxQHBIeKdGVZU9ntSV3DX8oK01w1Qz9ltLyPy5_LMVDOFkDuwPYPDS9MbYFO7dBY8-_sk-hljWxOxSM=w737-h247-no" alt="image"></p>
+<p>安裝完後點選 google app script new 一個新專案<br>直接放上讀取表單程式碼</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> doGet(e) &#123;</span><br><span class="line">  var params = e.parameter;</span><br><span class="line">  var sheetUrl = params.sheetUrl;</span><br><span class="line">  var sheetTag = params.sheetTag;</span><br><span class="line">  var row = params.row;</span><br><span class="line">  var col = params.col;</span><br><span class="line">  var endRow = params.endRow;</span><br><span class="line">  var endCol = params.endCol;</span><br><span class="line">  var rowRange = endRow - row + 1;</span><br><span class="line">  var colRange = endCol - col + 1;</span><br><span class="line"></span><br><span class="line">  var SpreadSheet = SpreadsheetApp.openByUrl(sheetUrl);</span><br><span class="line">  var Sheet = SpreadSheet.getSheetByName(sheetTag);</span><br><span class="line"></span><br><span class="line">  var lastRow = Sheet.getLastRow();</span><br><span class="line">  var lastCol = Sheet.getLastColumn();</span><br><span class="line"></span><br><span class="line">  <span class="keyword">if</span>(rowRange&gt;lastRow)&#123;</span><br><span class="line">    rowRange = lastRow;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">if</span>(colRange&gt;lastCol)&#123;</span><br><span class="line">    colRange = lastCol;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  var data = Sheet.getSheetValues(row, col, rowRange,colRange);</span><br><span class="line"></span><br><span class="line">  <span class="built_in">return</span> ContentService.createTextOutput(data);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="https://lh3.googleusercontent.com/pE07qMG2YeNKyes3SqMPL4xp0UG5uEJFf_h9yGJtcYx_MdbYi3QRikI8-AcWqqTU0Ium4ROTluDafX57ZtscTjHDWmtQtBDxf1uhyCg---B6jOs18eDzqTM-SZDqhM3WOK-lxYRFuMkgU9uGM4f77rBEjblgYg6yQOOUVCDXxSTD0-Lho1CE8OPXX7L50RSyefsGwcnvbh7pLtGjMpjk809E86RD1oRTtcp4_YNv3r3LoPgkDOE3z-hBq00CuOck1Go38xFIvZX-h4AzXquzpoSUV1XCSjO0wZcrZl7kjOhK7o6RagOTmo2tlAvx4gZTgB9MK1_8Wwsh9tfMNwAOCRx0l2lcKfoBDX7Gioeb72McWbs8LWVccn-UteeyYccDI2ukw7kp-otxHz2nvM7DrvRlTzCuMhqr1NIkgvhhKxkz5Ke6lUnQ7Z_hxlhEdAS7MMt3TqMfxbZdq3bKm7Z32hN4lL7YvAY_FVAbMwvZcJwIMEffWTwLiOhwNlBqgse34zGTMAahYubVHwKxWUMXzZQQVOgt4wv8Pwedh7RkovenYjlQh3mLzg7JQls2mym9PhWY7eiYQFLUAqvN7x6IgYpFNNZlzG7EY-Z1fcg=w711-h650-no" alt="image"></p>
+<p>開啟讀取試算表權限<br><img src="https://lh3.googleusercontent.com/5qYsu_0PdB6hwKjHBvgrG0hgJAgmo6_Vd0qwdWqF6imPwjizvme8Xn-MJhmVy6wC3r4Q-o2H8htc_mEnHYkELc2BoyFfwOo9mVArYdMg00sQBoNEbGKbzS46-olVpgSaVmFknr7Vv7Jodh79DquN9hSrwXucku7pQ_uLPS4G2V2xFpxIsi4yoeI8HMyPx1X75t0xrLnhyb1yl6pDHQYQgxU34lm8T7tpgBgc1OIa7LQm7fqArTJg15fNp3e9v7Aequc7yJbHJt8NGOINCvmaS8GcYNCPEEpzFz2vXEilhkcBp4TwsOkw60Oe7rZGRMSgYG4_6J7Tvc0cnN28SoIpdI9LZy3QRHXNhqy4srtOH7_gDUvNLosSyvLmZlzY8TX-s_uzL7bWRuKeaMemZWQ1-00hekqaS1pAtjUMTyqdAjE5HGNb-85VJbECpzsYRL3GhrPefayJn-Jf0TriU1CJl2Au0Gy19rE8fmr2REZsEKJECzKjdZNBRIdo5QzAz67t36O-fzVBaUAd0UeYc4OOal1EqYphGoM-EqgM96e5k1GhC-W53aUtRZJVLYJcl0oGQeJ8-UrXYOt8vO-tQ7CMw-dEYZA82GVQIQ4z6bU=w416-h310-no" alt="image"></p>
+<h3 id="第三步發佈"><a href="#第三步發佈" class="headerlink" title="第三步發佈"></a>第三步發佈</h3><p><img src="https://lh3.googleusercontent.com/VdLM6dWHe9WM25ZU55VpOCzPuIAlAqDWxmkaxpW6aXNRxBSDDRoz4xqa7GU0fP_iDQyZLMnvQ3zKg4V8XVillTosAZYeb_kw9tc_HAiHGgnDO4a9e6GD1Fa7bojiHopuSYAreH2yCvHAgw7KV5n4XKprLLDAOGZ2q1nc1thqhI0ifSYU2LpyUMRs54xv7OLuTwCnQFptBSQPdaetdCLiyHDUCWVfKewrz-ZzXCp2tsj3L2OSmoimmLnOyDJcShO57st8qKr3_LXMXHgukTpJ0dHgtv3DHwHf9mV4LYQOdrRgYJ0jQX-EQUyCraGBhUm2OaxP7kzXR_Xi7oNCo19jmGYRe1h4L1jEqAMw8VvGZ0dQA73PMnU1-M7mCE5YTJHiJzQ8bapzt1sNdRQ0_bMVgI81QPycmzxclFXffOlzSq0cNQ_1B85s-FJMQAh10i8azF3WSnFKAelcPCLm2IXz-1rCN-UZjtXhw39CuCu_IolrSyR866y5MWXA_I6zCjIX6wkmoGmBQljkAOb-hYkd9oPWwHmKynguJGQzn88Jay4tMZkULgxzkvPbdszng69nGQHLgo_r6ykN2ukQKGK-_bfs0ekb7BfIRg1Usns=w627-h621-no" alt="image"></p>
+<h3 id="頁面應用demo"><a href="#頁面應用demo" class="headerlink" title="頁面應用demo"></a>頁面應用demo</h3><p>連結設定<br>sheetUrl填入試算表連結<br><a href="https://docs.google.com/spreadsheets/d/10WgMzAeogNjK6y_rIy-ru7R1Jcb6G-K9jsZv709vSYU/edit#gid=0" target="_blank" rel="noopener">https://docs.google.com/spreadsheets/d/10WgMzAeogNjK6y_rIy-ru7R1Jcb6G-K9jsZv709vSYU/edit#gid=0</a></p>
+<p>get url 填入 部署後部署後程式網址<br>並開啟存取權限 選擇 “任何人,甚至是匿名使用者”</p>
+<p><img src="https://lh3.googleusercontent.com/pAU7f5pZM-GYE7UJWFhP4byWlKdKXjnGSuSR29Gk09Gu6LNX49hjR55QgSb9FGeAlsIlSm8znHCra3cfn7qt5G_gUuHNOP7cjiyB2N3UDxXiyetJKZ00GxN0D2MkQ6wJEyhn77jhXbDMhcGUiXiM9x8FuKcKUdk1qGoO53Qu1IIt1MWD4xBJzGxdrL5RJx94xYOAtwkp3KSjCiVGdpl7kHgc9VhlHYUem5aEwtA1Olnon9s7tmEe4YxXIPMnR9iMuQsQtnjEG-Fl-pj6SzzyOTAgI7wMd8SufeiCuQY4_rFLNR942chOrpJQtVQDfXz3FO0T2Zd1KVlR8K6vtzVmH5P1G5kgdGm-Dovy8Wrwh8NM6js2IYRh61XHlXsxG2kRvFvTB8ErL0yYPThGm6vYe3kQIsiaAbK76kZpEH4KoTvHI5sqj8tKhjU2J_Eh0FwHqoDom6z-XUf9DXBj71irJNjVqc0h3ARsPgdpQgwYm0QCbwfF570efNES8w-CLyMqu3IhO9OKDtRk-E_bYX_YU2QXyrrnnRYvNHJ_m5m7wcvCckyh0MlQ9EpaL_7VvqeE9iPAav_nGROjkcjUZAOqrRNcoLK_zJq34dCD5Q8=w475-h522-no" alt="image"></p>
+<p>Demo</p>
+<iframe height="265" scrolling="no" title="OQGpVr" src="//codepen.io/yuyen/embed/OQGpVr/?height=265&theme-id=0&default-tab=js,result&embed-version=2" frameborder="no" allowtransparency="true" allowfullscreen="true" style="width: 100%;">See the Pen <a href="https://codepen.io/yuyen/pen/OQGpVr/" target="_blank" rel="noopener">OQGpVr</a> by yuyen (<a href="https://codepen.io/yuyen" target="_blank" rel="noopener">@yuyen</a>) on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.<br></iframe>
 
 
       
-
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/google-sheets/" rel="tag"># google sheets</a>
+          
+            <a href="/tags/google-app-script/" rel="tag"># google app script</a>
+          
+            <a href="/tags/資料庫/" rel="tag"># 資料庫</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -358,6 +468,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -378,8 +492,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目錄
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            本站概覽
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -482,6 +605,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#參考官方文件"><span class="nav-number">1.</span> <span class="nav-text">參考官方文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第一步建立google試算表-並開啟與他人共用"><span class="nav-number">2.</span> <span class="nav-text">第一步建立google試算表 並開啟與他人共用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第二步安裝-google-app-script"><span class="nav-number">3.</span> <span class="nav-text">第二步安裝 google app script</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第三步發佈"><span class="nav-number">4.</span> <span class="nav-text">第三步發佈</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#頁面應用demo"><span class="nav-number">5.</span> <span class="nav-text">頁面應用demo</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -622,6 +761,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 

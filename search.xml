@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[Hello World]]></title>
-    <url>%2F2018%2F02%2F28%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+    <title><![CDATA[Google App Script 應用]]></title>
+    <url>%2F2018%2F02%2F28%2F2018-02-28%2F</url>
+    <content type="text"><![CDATA[google app script 應用於 Google 試算表 透過試算表做簡易資料庫 參考官方文件Reference 第一步建立google試算表 並開啟與他人共用 第二步安裝 google app script 安裝完後點選 google app script new 一個新專案直接放上讀取表單程式碼 1234567891011121314151617181920212223242526272829function doGet(e) &#123; var params = e.parameter; var sheetUrl = params.sheetUrl; var sheetTag = params.sheetTag; var row = params.row; var col = params.col; var endRow = params.endRow; var endCol = params.endCol; var rowRange = endRow - row + 1; var colRange = endCol - col + 1; var SpreadSheet = SpreadsheetApp.openByUrl(sheetUrl); var Sheet = SpreadSheet.getSheetByName(sheetTag); var lastRow = Sheet.getLastRow(); var lastCol = Sheet.getLastColumn(); if(rowRange&gt;lastRow)&#123; rowRange = lastRow; &#125; if(colRange&gt;lastCol)&#123; colRange = lastCol; &#125; var data = Sheet.getSheetValues(row, col, rowRange,colRange); return ContentService.createTextOutput(data);&#125; 開啟讀取試算表權限 第三步發佈 頁面應用demo連結設定sheetUrl填入試算表連結https://docs.google.com/spreadsheets/d/10WgMzAeogNjK6y_rIy-ru7R1Jcb6G-K9jsZv709vSYU/edit#gid=0 get url 填入 部署後部署後程式網址並開啟存取權限 選擇 “任何人,甚至是匿名使用者” Demo See the Pen OQGpVr by yuyen (@yuyen) on CodePen.]]></content>
+      <categories>
+        <category>web</category>
+      </categories>
+      <tags>
+        <tag>google sheets</tag>
+        <tag>google app script</tag>
+        <tag>資料庫</tag>
+      </tags>
   </entry>
 </search>
