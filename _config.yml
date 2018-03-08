@@ -75,7 +75,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: next
+theme: vNext
 
 tag_generator:
   per_page: 6 ##標籤分類頁面默認10篇文章
